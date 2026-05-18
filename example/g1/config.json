@@ -1,0 +1,22 @@
+{
+  "default_duration": 2.0,
+  "confidence_threshold": 0.6,
+  "classifier_mode": "llm",
+  "enable_suggestions": true,
+  "max_suggestions": 3,
+  "robot_mode": "real",
+  "control_mode": "auto",
+  "network_interface": "eno1",
+  "robot_timeout": 2.0,
+  "llm": {
+    "provider": "qwen_openai_compatible",
+    "model": "qwen-plus",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "temperature": 0.0,
+    "timeout": 15.0,
+    "min_confidence": 0.6,
+    "fallback_to_rules": true
+  },
+  "verbose": true
+}

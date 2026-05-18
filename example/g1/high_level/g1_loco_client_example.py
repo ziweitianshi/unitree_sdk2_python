@@ -1,5 +1,11 @@
 import time
 import sys
+from pathlib import Path
+
+SDK_ROOT = Path(__file__).resolve().parents[3]
+if str(SDK_ROOT) not in sys.path:
+    sys.path.insert(0, str(SDK_ROOT))
+
 from unitree_sdk2py.core.channel import ChannelSubscriber, ChannelFactoryInitialize
 from unitree_sdk2py.idl.default import unitree_go_msg_dds__SportModeState_
 from unitree_sdk2py.idl.unitree_go.msg.dds_ import SportModeState_
