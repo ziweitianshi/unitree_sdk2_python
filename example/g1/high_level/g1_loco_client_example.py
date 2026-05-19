@@ -25,7 +25,8 @@ option_list = [
     TestOption(name="wave hand1", id=9), # wave hand without turning around
     TestOption(name="wave hand2", id=10), # wave hand and trun around  
     TestOption(name="shake hand", id=11),     
-    TestOption(name="Lie2StandUp", id=12),     
+    TestOption(name="Lie2StandUp", id=12),  
+    TestOption(name="start", id=13),   
 ]
 
 class UserInterface:
@@ -113,5 +114,6 @@ if __name__ == "__main__":
             sport_client.Damp()
             time.sleep(0.5)
             sport_client.Lie2StandUp() # When using the Lie2StandUp function, ensure that the robot faces up and the ground is hard, flat and rough.
-
+        elif test_option.id == 13:     # 增加运控模式选项
+            sport_client.Start()
         time.sleep(1)

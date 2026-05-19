@@ -27,8 +27,8 @@ if __name__ == '__main__':
         ChannelFactoryInitialize(0)
 
     custom = Custom()
-    selectMode = "ai" 
-    # selectMode = "normal"
+    # selectMode = "ai" 
+    selectMode = "normal"
     # selectMode = "advanced" 
     # selectMode = "ai-w"  # for wheeled robot
     ret = custom.selectMode(selectMode) 
